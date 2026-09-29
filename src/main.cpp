@@ -24,8 +24,11 @@ int main()
 
     while(WindowShouldClose() == false)
     {
+        Game_Hangman.Hangman_Update();
+
         BeginDrawing();
 
+        Game_Hangman.Hangman_Draw();
 
         EndDrawing();
     }
